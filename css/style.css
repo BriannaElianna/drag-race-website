@@ -1,0 +1,70 @@
+body {
+  background-color: #f9eaf9; /* Light pink background */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.loader-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20vh; /* Adjusted margin to move the loading content lower */
+}
+
+.loader {
+  border: 8px solid #f3c5e5; /* Light pink border */
+  border-top: 8px solid #e368a9; /* Dark pink border */
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+  margin-bottom: 16px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+#loading-text {
+  font-family: "Arial", sans-serif;
+  font-size: 24px;
+  color: #e368a9; /* Dark pink text color */
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+header {
+  display: flex;
+  align-items: flex-start; /* Updated alignment to align at the top */
+  justify-content: center;
+  position: fixed; /* Added position: fixed */
+  top: 0; /* Added top: 0 to position the header at the top */
+  width: 100%; /* Full width */
+  background-color: #f9eaf9; /* Same as body background color */
+  padding: 20px; /* Added padding for spacing */
+  box-sizing: border-box; /* Added box-sizing to include padding in width */
+}
+
+#status-text {
+  font-family: "Arial", sans-serif;
+  font-size: 16px; /* Adjusted font size */
+  color: #e368a9; /* Dark pink text color */
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.joke-container {
+  max-width: 80%; /* Added max-width to limit the width of the joke container */
+}
